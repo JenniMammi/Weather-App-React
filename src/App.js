@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Oulu" />
+        <Weather defaultCity="Inari" />
         <footer>
           <a
             href="https://github.com/JenniMammi/new-weatherapp-react"

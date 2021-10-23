@@ -21,25 +21,32 @@
   font-size: 50px;
 }
 
-.Search {
+.Weather .Search {
   padding-bottom: 15px;
-  border-radius: 10px;
 }
 
-.searchbutton {
+.Weather .searchfield {
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 10px;
+  border: white;
+}
+
+.Weather .searchbutton {
   margin-left: 5px;
   color: rgb(0, 0, 0);
-  background-color: white;
+  background-color: #c0dbff;
   border: white;
   border-radius: 10px;
   padding: 6px;
   font-size: 14px;
 }
 
-.searchbutton:hover {
-  background-color: #c0dbff;
+.Weather .searchbutton:hover {
+  background-color: #74b0fe;
 }
 
 .Weather .unit {
   line-height: 12px;
 }
+  
