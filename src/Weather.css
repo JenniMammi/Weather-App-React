@@ -1,0 +1,45 @@
+.Weather {
+  border-radius: 10px;
+  background-color: #04479e;
+  color: white;
+  padding: 16px;
+  margin: 30px 0px 2px auto;
+  box-shadow: 5px 5px 5px rgb(211, 211, 211);
+}
+
+.Weather h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Weather h2 {
+  font-size: 15px;
+  color: rgb(225, 225, 225);
+}
+
+.Weather .degreeshown {
+  font-size: 50px;
+}
+
+.Search {
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.searchbutton {
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: white;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
+
+.searchbutton:hover {
+  background-color: #c0dbff;
+}
+
+.Weather .unit {
+  line-height: 12px;
+}
