@@ -39,14 +39,14 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form onSubmit="handleSearch">
+        <form onSubmit={handleSearch}>
           <div className="Search">
             <input
               type="search"
               placeholder="Search city"
               className="searchfield"
               autoFocus="on"
-              onChange="handleCityChange"
+              onChange={handleCityChange}
             />
 
             <input type="submit" value="Search" className="searchbutton" />
