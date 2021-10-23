@@ -1,6 +1,8 @@
 import React from "react";
 import FriendlyDate from "./FriendlyDate";
+import Icon from "./Icon";
 import "./Weather.css";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,16 +13,16 @@ export default function WeatherInfo(props) {
       </h2>
       <h2 className="text-capitalize">{props.data.description}</h2>
 
-      <div className="row">
-        <div className="col-6">
-          <img src={props.data.iconUrl} height="65px" alt="Weather Icon" />
-          <span className="degreeshown">
-            {Math.round(props.data.temperature)}
-          </span>
-          <span className="unit"> °C</span>
+      <div className="Insights">
+        <div className="Icon">
+          <Icon code={props.data.icon} />
         </div>
-        <div className="col-6">
+        <div className="Degree">
+          <WeatherTemperature celsius={props.data.temperature} />
+        </div>
+        <div className="AdditionalInfo">
           <ul>
+            <li>Feels like: {Math.round(props.data.feelslike)}°C</li>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {Math.round(props.data.wind)}m/s</li>
           </ul>

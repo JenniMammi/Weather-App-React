@@ -2,20 +2,23 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import Icon from "./Icon";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
   let [city, setCity] = useState(props.defaultCity);
 
   function handleSubmit(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
       time: "07:30",
       temperature: response.data.main.temp,
+      feelslike: response.data.main.feels_like,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
     });

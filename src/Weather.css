@@ -17,6 +17,16 @@
   color: rgb(225, 225, 225);
 }
 
+.Weather .Insights {
+  grid-template-columns:
+    50px
+    150px
+    200px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 .Weather .degreeshown {
   font-size: 50px;
 }
@@ -49,4 +59,7 @@
 .Weather .unit {
   line-height: 12px;
 }
-  
+
+.Weather canvas {
+  margin: 10px;
+}
