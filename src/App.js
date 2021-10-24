@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -11,6 +11,7 @@ export default function App() {
           <a
             href="https://github.com/JenniMammi/new-weatherapp-react"
             target="_blank"
+            rel="noreferrer"
           >
             Open-source code
           </a>

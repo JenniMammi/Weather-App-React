@@ -63,3 +63,13 @@
 .Weather canvas {
   margin: 10px;
 }
+
+.WeatherTemperature .unitbutton {
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #c0dbff;
+  border: white;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 14px;
+}
