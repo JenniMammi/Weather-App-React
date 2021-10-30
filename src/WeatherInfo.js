@@ -1,6 +1,5 @@
 import React from "react";
 import FriendlyDate from "./FriendlyDate";
-import Icon from "./Icon";
 import MainIcon from "./MainIcon";
 import "./Weather.css";
 import WeatherTemperature from "./WeatherTemperature";
