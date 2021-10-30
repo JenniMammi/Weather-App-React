@@ -73,3 +73,29 @@
   padding: 6px;
   font-size: 14px;
 }
+
+.Forecast {
+  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  align-items: flex-start;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  gap: 0px 10px;
+}
+
+.Forecast .Daily {
+  border: 1px solid;
+  text-align: center;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+.Forecast .Forecast-temperatures-min {
+  color: grey;
+  font-size: 13px;
+}
+
+.Forecast .Forecast-temperatures-max {
+  font-weight: 700;
+}
