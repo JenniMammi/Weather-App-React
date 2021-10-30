@@ -66,12 +66,22 @@
 
 .WeatherTemperature .unitbutton {
   margin-left: 5px;
-  color: rgb(0, 0, 0);
-  background-color: #c0dbff;
+  color: white;
   border: white;
   border-radius: 10px;
   padding: 6px;
   font-size: 14px;
+  background-color: #05479d;
+}
+
+.WeatherTemperature .unitbutton:hover {
+  margin-left: 5px;
+  color: #05479d;
+  border: white;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
 }
 
 .Forecast {
@@ -84,7 +94,6 @@
 }
 
 .Forecast .Daily {
-  border: 1px solid;
   text-align: center;
   border-radius: 4px;
   background-color: white;
